@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .screen{
+            margin: 5px;
+            padding: 30px;
+            border: 1px solid;
+            width: auto;
+            background-color: aliceblue;
+        }
+        button{
+            background-color: grey;
+            border: 1px solid;
+            margin: 5px;
+            padding: 20px 20px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 15px ; 
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+        }
+        table{
+            border: 3px solid;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: darkseagreen;
+            padding: 20px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1><label>calculator</label></h1>
+    <table>
+        <tr><td colspan="4"><p class="screen"></p></td></tr>
+        <tr>
+            <td><button class="clear">C</button></td>
+            <td><button class="del"><-</button></td>
+            <td><button onclick="clicking (this)" class="dot">.</button></td>
+            <td><button onclick="clicking (this)" class="div">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="clicking (this)" class="1">1</button></td>
+            <td><button onclick="clicking (this)" class="2">2</button></td>
+            <td><button onclick="clicking (this)" class="3">3</button></td>
+            <td><button onclick="clicking (this)" class="mul">*</button></td>
+        </tr>
+    
+         <tr>
+            <td><button onclick="clicking (this)" class="4">4</button></td>
+            <td><button onclick="clicking (this)" class="5">5</button></td>
+            <td><button onclick="clicking (this)" class="6">6</button></td>
+            <td><button onclick="clicking (this)" class="minus">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="clicking (this)" class="7">7</button></td>
+            <td><button onclick="clicking (this)" class="8">8</button></td>
+            <td><button onclick="clicking (this)" class="9">9</button></td>
+            <td><button onclick="clicking (this)" class="plus">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="clicking (this)" class="0">0</button></td>
+            <td><button onclick="clicking (this)" class="00">00</button></td>
+            <td colspan="2"><button class="equal">=</button></td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
